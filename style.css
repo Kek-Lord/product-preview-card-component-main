@@ -9,11 +9,20 @@
     --White: hsl(0, 0%, 100%);
 }
 
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--Cream);
     font-weight: 500;
     letter-spacing: 1px;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
 }
 
 .display-content {
