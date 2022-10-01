@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.display-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 0%;
+}
+
+.review-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    background-color: var(--White);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px lightgray;
+    font-size: 14px;
+}
+
+.review-card-photo-desktop {
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.review-card-photo-mobile {
+    display: none;
+}
+
+.review-card-text {
+    margin-left: 24px;
+    width: 300px;
+    padding-top: 12px;
+}
+
+.perfume {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.item-description {
+    width: 256px;
+    line-height: 24px;
+}
+
+.review-text-title {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 32px;
+    width: 240px;
+}
+
+.item-price {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    width: 256px;
+}
+
+.item-price-2 {
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
+
+/* Button */
+
+.btn {
+    background-color: var(--dark-cyan);
+    width: 256px;
+    height: 40px;
+    color: var(--White);
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 0;
+    position: relative;
+    top: -15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 360px) {
+    html {
+        max-width: 360px;
+        overflow-x: hidden;
+        height: 100vh;
+        min-width: 300px;
+    }
+
+    body {
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .display-content {
+        padding: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-card {
+        display: block;
+        width: 90vw;
+        min-width: 280px;
+    }
+
+    .review-card-photo-desktop {
+        display: none;
+    }
+
+    .review-card-photo-mobile {
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .review-card-text {
+        width: 90%;
+
+    }
+
+    .btn {
+        width: 95%;
+        position: relative;
+        top: -15px;
+    }
+}
