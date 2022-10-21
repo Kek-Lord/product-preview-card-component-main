@@ -30,8 +30,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 0%;
     padding-bottom: 0%;
+    height: 100vh;
 }
 
 .review-card {
